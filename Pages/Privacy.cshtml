@@ -1,0 +1,56 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+
+<partial name= "_Formulario"></partial>
+
+@{
+    //MODIFICACIONES
+}
+
+<form method="post">
+  <div class="mb-3">
+    <label asp-for="Data.Mail" class="form-label"></label>
+    <input type="email" class="form-control" asp-for="Data.Mail">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label asp-for="Data.Password" class="form-label"></label>
+    <input type="text" class="form-control" asp-for="Data.Password">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="robot.png">
+    <title>Images</title>
+    <style>
+        body {
+            height: 100vh;
+            background-image: url("https://i.pinimg.com/originals/0f/f3/10/0ff310f8a04cae646431dcfd7c0b6954.jpg");
+            color:white;
+            padding: 25px;
+            background-position: center;
+            background-size: cover;
+            background-position: fixed;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h3>Hangar18</h3>
+</body>
+</html>
